@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	function verificaSessao() {
 		var xhr = new XMLHttpRequest();
-		xhr.open("POST", "../usuario/verificaSessao.php");
+		xhr.open("POST", "php/verificaSessaoEditor.php");
 		xhr.send();
 		xhr.onload = function() {
 			if (xhr.status != 200) { // analyze HTTP status of the response
@@ -25,8 +25,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 					console.log(rdto.mensagem);
 					nome = document.getElementById("nome");
 					nome.innerHTML = "Oi, " + rdto.usuario + '!'; /* Coloca o nome do usuário no Header */
+				} else if (rdto.codigo == 2) {
+					window.location.href = 'sem-permissao.html';
 				} else {
-					window.location.href = '../../index.html?logado=false'; /* Direciona dizendo que não está logado */
+					window.location.href = 'index.html?logado=false'; /* Direciona dizendo que não está logado */
 				}
 			}
 		};
@@ -74,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		}
 	}
 
-	// Função efetuaLogoff destrói sessão e coockie HELPME_ONDE_ESTOU
+	// Função efetuaLogoff destrói sessão
 
 	function efetuaLogoff() {
 		var xhr = new XMLHttpRequest();
@@ -101,7 +103,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
               
 		// Cria elemento style
 		var css = document.createElement('style'); 
-		css.type = 'text/css'; 
    
 		if (css.styleSheet)  
 			css.styleSheet.cssText = estilos; 
@@ -281,6 +282,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	});
 
 	// ################################ Procedural ################################
+
+	verificaSessao();
 
 	try {
 		url = window.location.href;
