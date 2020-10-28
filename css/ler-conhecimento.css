@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+	overflow: hidden;
+}
+
+.cabecalho {
+	font-family: 'Ranchers', cursive;
+	font-size: 20px;
+	color: white;
+	background-color: #0D0D0D;
+	height: 50px;
+	user-select: none;
+}
+
+.divisor {
+	background-color:#595959;
+	height: 5px;
+}
+
+#corpo {
+	background-color: #F2F2F2;
+}
+
+#row-info-conhecimento {
+	font-size: 16px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.form-conhecimento > div > div> input {
+	height: 32px;
+	font-size: 16px;
+	border-color:  #595959;
+}
+
+#home {
+	cursor:pointer;
+}
+
+#texto-conhecimento {
+	overflow-y: scroll;
+}
+
+.polegares {
+	font-size: 20px;
+	color: white;
+	margin: 25% 25% 25% 25%;
+}
+
+.circulo {
+	border-radius: 50%;
+	background-color: black;
+	width: 40px;
+	height: 40px;
+}
+
+#pol-cima:hover {
+	background-color: green;
+	box-shadow: 2px 2px 3px 2px grey;
+	cursor: pointer;
+}
+
+#pol-cima:active {
+	box-shadow: 0 0 0 0;
+}
+
+#pol-baixo:hover {
+	background-color: red;
+	box-shadow: 2px 2px 3px 2px grey;
+	cursor: pointer;
+}
+
+#pol-baixo:active {
+	box-shadow: 0 0 0 0;
+}
+
+#divisor-hr {
+	padding: 10px 0 10px 0;
+}

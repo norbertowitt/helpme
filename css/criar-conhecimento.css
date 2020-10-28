@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* Necessário para estender a coluna até o fim da página a partir daqui. */
+
+.cabecalho {
+	font-family: 'Ranchers', cursive;
+	font-size: 20px;
+	color: white;
+	background-color: #0D0D0D;
+	height: 50px;
+	user-select: none;
+}
+
+.divisor {
+	background-color:#595959;
+	height: 5px;
+}
+
+#corpo {
+	background-color: #F2F2F2;
+}
+
+#salvar {
+	background-color: #185f06;
+	width: 40%;
+	color: white;
+	text-align: center;
+	padding: 2px;
+	margin:auto;
+	box-shadow: 2px 2px 2px 1px grey;
+	user-select: none;
+}
+
+#salvar:hover {
+	background-color: #10c300;
+	width: 40%;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding: 2px;
+	margin:auto;
+	cursor: pointer;
+}
+
+#salvar:active {
+	background-color: #185f06;
+	width: 40%;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding: 2px;
+	margin:auto;
+	cursor: pointer;
+	box-shadow: 0 0 0 0;
+}
+
+#cancelar {
+	background-color: #8b0c0c;
+	width: 40%;
+	color: white;
+	text-align: center;
+	padding: 2px;
+	margin:auto;
+	box-shadow: 2px 2px 2px 1px grey;
+	user-select: none;
+}
+
+#cancelar:hover {
+	background-color: #df1717;
+	width: 40%;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	padding: 2px;
+	margin:auto;
+	cursor: pointer;
+}
+
+#cancelar:active {
+	background-color: #8b0c0c;
+	width: 40%;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	padding: 2px;
+	margin:auto;
+	cursor: pointer;
+	box-shadow: 0 0 0 0;
+}
+
+.form-conhecimento {
+	font-size: 16px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.form-conhecimento > div > div> input {
+	height: 32px;
+	font-size: 16px;
+	border-color:  #595959;
+}
+
+#home {
+	cursor:pointer;
+}

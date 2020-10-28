@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<script type="text/javascript" src="js/hall.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/hall.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon.ico">
+	<title>HelpMe</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+	<div id="container-geral" class="container-fluid">
+
+		<div id="row-cabecalho" class="row">
+			<div class="col-3 d-flex align-items-center cabecalho"> 
+				HelpMe
+			</div>
+			<div id="urgencia" class="col-1 d-flex align-items-center cabecalho">
+				<!-- Aqui vai a exclamação quando houver urgência -->
+			</div>
+			<div class="col-4 cabecalho">
+				<i id="lupa" class="fas fa-search"></i>
+				<input id="pesquisa" placeholder="Faça sua pesquisa ;)" type="text" />
+			</div>
+			<div class="col-4 d-flex align-items-center text-right cabecalho">
+				<div class="ml-auto" data-toggle="tooltip" data-placement="left" title="Textos-Padrão">
+					<i id="texto-padrao" class="far fa-clipboard"></i>
+				</div>
+				<div class="ml-auto">
+					<span id="nome"></span>
+				</div>
+				<div class="ml-5" data-toggle="tooltip" data-placement="bottom" title="Sair">
+					<i id="logoff" class="fas fa-power-off"></i>
+				</div>
+			</div>
+      </div>
+      
+	 <div id="row-divisor" class="row">
+		 <div class="col-12 divisor"></div>
+	 </div>
+	 
+	  <div id="row-loader" class="row">
+		<div class="col-12 p-0 loader">
+			<div class="bar"></div>
+		</div>
+	  </div>
+
+      
+		<div id="row-corpo" class="row corpo">
+			<div id="menu" class="col-2 menu-esquerda p-0 position-fixed">
+				<!-- Aqui vão os menus -->
+         </div>
+         
+			<div id="feed" class="col offset-2 feed">
+				<!-- Aqui vai o conteúdo do feed -->
+			</div>
+
+			<div id="modal-texto-padrao" class="modal-body">
+				<div id="container-texto-padrao" class="container-fluid"> 
+					<div class="row">
+						<div class="col-11 p-0">
+							<h3>Textos-padrão:</h3>
+						</div>
+						<div class="col-1">
+							<i id="x-modal-texto-padrao" class="fas fa-window-close" onClick="fechaModalTextoPadrao()"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="modal-urgencia" class="modal-body">
+				<div id="container-urgencia" class="container-fluid"> 
+					<div class="row">
+						<div class="col-11 p-0">
+							<h3>Urgências</h3>
+						</div>
+						<div class="col-1">
+							<i id="x-modal-urgencia" class="fas fa-window-close" onClick="document.getElementById('modal-urgencia').style.display='none'"></i>
+						</div>
+					</div>
+					<div class="row mt-3">
+						<div id="conteudo-urgencia" class="col-12">
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+	</div>
+
+	<!-- O bloco script abaixo é para calcular automaticamente o tamanho visível do Feed e permitir a rolagem -->
+	<script>
+	cabecalho = document.getElementById("row-cabecalho").clientHeight; /*Pega o tamanho do Cabeçalho*/
+	divisor = document.getElementById("row-divisor").clientHeight; /*Pega o tamanho do Divisor*/
+	document.getElementById("feed").style.height = (window.innerHeight - (cabecalho + divisor)) + 'px'; /*Faz os cálculos e ajusta*/
+	window.addEventListener("resize", function() {
+		/*Aqui em caso a janela tenha o Zoom alterado*/
+		document.getElementById("feed").style.height = (window.innerHeight - (cabecalho + divisor)) + 'px';
+	});
+	</script>
+	<!-- Ativa os tooltips do menu da esquerda -->
+	<script>
+	document.addEventListener("DOMContentLoaded", function(event) {
+		$(function() {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	});
+	</script>
+	<script src="https://kit.fontawesome.com/58a0fc7f89.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>

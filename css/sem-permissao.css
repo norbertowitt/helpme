@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
+#cabecalho {
+	font-family: 'Ranchers', cursive;
+	font-size: 20px;
+	color: white;
+	background-color: #0D0D0D;
+	height: 50px;
+	user-select: none;
+}
+
+.helpme {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-family: 'Ranchers', cursive;
+    color: black;
+	font-size: 80px;
+	user-select: none;
+}

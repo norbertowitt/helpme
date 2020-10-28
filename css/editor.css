@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+
+/* Necessário para estender a coluna até o fim da página a partir daqui. */
+
+.cabecalho {
+	font-family: 'Ranchers', cursive;
+	font-size: 20px;
+	color: white;
+	background-color: #0D0D0D;
+	height: 50px;
+	user-select: none;
+}
+
+.divisor {
+	background-color:#595959;
+	height: 5px;
+}
+
+.menu-esquerda {
+	background-color: #262626;
+	height: 100%;
+	user-select: none;
+}
+
+.item-menu-esquerda {
+	color: #BFBFBF;
+	border-bottom: 2px solid #595959;
+	height: 3rem;
+}
+
+.item-menu-esquerda:hover {
+	background: #0D0D0D;
+	font-weight: bold;
+	cursor:pointer;
+}
+
+.item-menu-esquerda:active {
+	color: #262626;
+	background-color: #BFBFBF;
+}
+
+.texto-item-menu-esquerda {
+	margin-left: 8px;
+	font-size: 15px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.feed {
+	overflow-y: scroll;
+	background-color: #F2F2F2;
+	font-family: 'Quicksand', sans-serif;
+  }
+
+.fas {
+	  margin-left: 8px;
+	  width: 22px;
+	  font-size: 18px;
+  }
+  
+#nome {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+  }
+
+#logoff:hover {
+	color: red;
+	cursor: pointer;
+}
+
+#logoff:active {
+	color:white;
+}
+
+.mapa {
+	background-color: #262626;;
+	color: #F0E6DA;
+	padding: 2px 5px 2px 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 10px;
+	font-size: 11pt;
+}
+
+.mapa:hover {
+	cursor: pointer;
+	background-color: #56BACC;
+	color: white;
+	font-weight: bold;
+}
+
+.mapa:active {
+	color: #262626;
+	background-color: #BFBFBF;
+}
+
+.cabecalho-mapa{
+	margin-top: 5px;
+	height: 30px;
+	padding: 0 0 5px 0;
+	height: 40px;
+}
+
+#salvar {
+	background-color: #185f06;
+	width: 40%;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	padding: 2px;
+	margin:auto;
+}
+
+#salvar:hover {
+	background-color: #10c300;
+	width: 40%;
+	border-radius: 10px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding: 2px;
+	margin:auto;
+	cursor: pointer;
+}
+
+#salvar:active {
+	background-color: #020e00;
+	width: 40%;
+	border-radius: 10px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding: 2px;
+	margin:auto;
+	cursor: pointer;
+}
+
+#cancelar {
+	background-color: #8b0c0c;
+	width: 40%;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	padding: 2px;
+	margin:auto;
+}
+
+#cancelar:hover {
+	background-color: #df1717;
+	width: 40%;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	padding: 2px;
+	margin:auto;
+	cursor: pointer;
+}
+
+#cancelar:active {
+	background-color: #3b0101;
+	width: 40%;
+	border-radius: 10px;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	padding: 2px;
+	margin:auto;
+	cursor: pointer;
+}
+
+.divisor-fino {
+	background-color: black;
+	height: 1px;
+}
+
+#corpo {
+	background-color: #F2F2F2;
+}
+

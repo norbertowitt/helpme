@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+
+/* Necessário para estender a coluna até o fim da página a partir daqui. */
+
+html, body { 
+	overflow: hidden;
+}
+
+.cabecalho {
+	font-family: 'Ranchers', cursive;
+	font-size: 20px;
+	color: white;
+	background-color: #0D0D0D;
+	height: 50px;
+	user-select: none;
+}
+
+.divisor {
+	background-color:#595959;
+	height: 5px;
+}
+
+#menu-esquerda {
+	background-color: #262626;
+	height: 100%;
+	user-select: none;
+}
+
+.item-menu-esquerda {
+	color: #BFBFBF;
+	border-bottom: 2px solid #595959;
+	height: 3rem;
+}
+
+.item-menu-esquerda:hover {
+	background: #0D0D0D;
+	font-weight: bold;
+	cursor:pointer;
+}
+
+.item-menu-esquerda:active {
+	color: #262626;
+	background-color: #BFBFBF;
+}
+
+.texto-item-menu-esquerda {
+	margin-left: 8px;
+	font-size: 15px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+#feed {
+	overflow-y: scroll;
+	background-color: #F2F2F2;
+  }
+
+.fas {
+	  margin-left: 8px;
+	  width: 22px;
+	  font-size: 18px;
+  }
+  
+#nome {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 18px;
+	color: white;
+  }
+
+#logoff:hover {
+	color: red;
+	cursor: pointer;
+}
+
+#logoff:active {
+	color:white;
+}
+
+.table {
+	max-width: 80%;
+	font-size: 10pt;
+	margin-top:10px;
+}
+
+.mapa {
+	background-color: #262626;;
+	color: #F0E6DA;
+	padding: 2px 5px 2px 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 10px;
+	font-size: 11pt;
+}
+
+.mapa:hover {
+	cursor: pointer;
+	background-color: #56BACC;
+	color: white;
+	font-weight: bold;
+}
+
+.mapa:active {
+	color: #262626;
+	background-color: #BFBFBF;
+}
+
+.cabecalho-mapa{
+	margin-top: 5px;
+	height: 30px;
+	padding: 0 0 5px 0;
+	height: 40px;
+}
+
+.tabela-pagina > tbody > tr:hover {
+	background-color: #56BACC;
+	cursor: pointer;
+}
+
+.tabela-pagina > tbody > tr:active {
+	background-color: #103038;
+	color: #D2C9BF;
+	cursor: pointer;
+}
+
+.editar{
+	font-size: 25px;
+	margin-right: 10px;
+}
+
+.apagar{
+	font-size: 25px;
+	margin-left: 10px;
+}
+
+.editar:hover {
+	color: red;
+}
+
+.apagar:hover {
+	color: red;
+}
+
+#adicionar {
+	color:rgb(24, 185, 24);
+}
+
+#adicionar:hover {
+	color:rgb(34, 255, 34);
+	cursor: pointer;
+}
+
+#adicionar:active {
+	color:rgb(116, 248, 116);
+	cursor: pointer;
+}
+
+.corpo-modal {
+	border: 2px solid black;
+	position: absolute;
+	width: 600px;
+	height: 250px;
+	z-index: 1;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	background-color: #F2F2F2;
+	border-radius: 10px;
+	display:none;
+}
